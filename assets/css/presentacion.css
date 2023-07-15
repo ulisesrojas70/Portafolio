@@ -1,0 +1,126 @@
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.presentacion h1 {
+    color: transparent;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    background-image: linear-gradient(180deg, #06283d, #256d85);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.presentacion h1 {
+    animation-duration: 2.5s;
+    animation-name: slidein;
+}
+  
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+.presentacion p {
+    color: #06283d;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.3rem;
+}
+
+.img_perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.links-contacto {
+    text-align: start;
+}
+
+.enlace-contacto {
+    display: inline-block;
+    margin-right: .7rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: #06283d;
+}
+
+.enlace-contacto i{
+    margin-left: 0.2rem;
+    color: #06283d;
+}
+
+.enlace-contacto:hover {
+    color: #256d85;
+}
+
+@media screen and (min-width: 768px) {
+    .presentacion {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .img_perfil {
+        width: 146px;
+        height: 146px;
+        margin: auto;
+    }
+
+    .links-contacto {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .presentacion {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .presentacion h1 {
+        font-size: 3.5rem;
+        line-height: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .presentacion p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .img_perfil {
+        width: 368px;
+        height: 368px;
+        margin: auto;
+    }
+
+    .enlace-contacto {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .presentacion {
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+    }
+}

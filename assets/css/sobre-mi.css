@@ -1,0 +1,38 @@
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+    background: #256d85;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #06283d, #256d85);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #06283d, #256d85); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.sobre-mi_titulo {
+    margin-top: 2rem;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.sobre-mi_texto {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #dff6ff;
+    line-height: 1.7rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre-mi_titulo, .sobre-mi_texto{
+        width: 50rem;
+    }
+
+    .sobre-mi_titulo {
+        font-size: 32px;
+    }
+}
+
+
+

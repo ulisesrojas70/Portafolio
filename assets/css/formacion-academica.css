@@ -1,0 +1,91 @@
+.formacion-academica {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-color: #06283d;
+    padding-bottom: 2rem;
+}
+
+.formacion-academica div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem
+}
+
+
+.formacion-academica_titulo {
+    color: #dff6ff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.lista-formacion_items {
+    width: 100%;
+    color: #dff6ff;
+}
+
+.itemlogo {
+    width: 19rem;
+    height: 8rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemlogo img{
+    width: 40%;
+    
+}
+
+.alura {
+    border-radius: 10px;
+}
+
+.lugar {
+    max-width: 20rem;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 1rem;
+}
+
+.periodo {
+    max-width: 20rem;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    
+
+}
+
+@media screen and (min-width: 1024px) {
+    .lista-formacion {
+        max-width: 19rem;
+    }
+    
+    .lugar {
+        font-size: 22px;
+    }
+    
+    .periodo {
+        font-size: 16px;
+    }
+
+    .formacion-academica_titulo {
+        font-size: 32px;
+    }
+}

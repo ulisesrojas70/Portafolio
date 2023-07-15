@@ -1,0 +1,98 @@
+.experiencia__profesional {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.experiencia__profesional--titulo {
+    margin-top: 2rem;
+    color: #06283d;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.experiencia__profesional--img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.lista__experiencia-profesional--titulo {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.lista__experiencia-profesional--subtitulo {
+    margin-top: 0.5rem;
+    font-size: 14px;
+}
+
+.lista__experiencia-profesional--buttons {
+    margin-top: 1.4rem;
+}
+
+.button_experiencia {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    padding: 0.3rem 1.2rem;
+    margin-right: 0.5rem;
+    border: 1px solid #06283d;
+    color: #dff6ff;
+    background-color: #06283d;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .button_experiencia {
+        padding: 0.7rem 1.6rem;
+        font-size: 16px;
+        border: 2px solid #ffffff;
+    }
+
+    .button_experiencia:hover {
+        cursor: pointer;
+        color: #06283d;
+        background-color: #ffffff;
+        border: 2px solid #256d85;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .experiencia__profesional--titulo {
+        font-size: 32px;
+    }
+
+    .lista__experiencia-profesional--izquierda {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .lista__experiencia-profesional--derecha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
+
+    .experiencia__profesional--imagen {
+        width: 60%;
+    }
+
+    .experiencia__profesional--descripcion {
+        width: 40%;
+    }
+
+    .lista__experiencia-profesional--titulo {
+        margin-top: 0;
+        font-size: 22px;
+    }
+
+    .lista__experiencia-profesional--subtitulo {
+        font-size: 16px;
+    }
+}

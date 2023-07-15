@@ -1,0 +1,113 @@
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #F5F5F5;
+}
+
+.hobbies-titulo {
+    margin-top: 2rem;
+    color: #06283d;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.list-hobbies {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 16px;
+    margin-bottom: 2rem;
+}
+  
+.list-hobbies_items{
+    background-color: #ffffff;
+    padding: 0.1rem;
+    width: 9rem;
+    height: 9rem;
+    color: #06283d;
+    font-weight: 500;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.list-hobbies_items span{
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    max-width: 6rem;
+}
+
+.hobbies__logo {
+    height: 3rem;
+    width: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    margin-left: 1rem;
+}
+
+.hobbies__logo--music {
+    background-image: url(../img/music-svgrepo-com.svg);
+}
+
+.hobbies__logo--guitar {
+    background-image: url(../img/guitar-svgrepo-com.svg);
+}
+
+.hobbies__logo--walk {
+    background-image: url(../img/man-walking-svgrepo-com.svg);
+}
+
+.hobbies__logo--series {
+    background-image: url(../img/television-svgrepo-com.svg);
+}
+
+.hobbies__logo--cook {
+    background-image: url(../img/cooking-svgrepo-com.svg);
+}
+
+@media screen and (min-width: 768px) {
+    .list-hobbies_items{
+        width: 12rem;
+    }
+
+    .hobbies__logo--music,
+    .hobbies__logo--guitar,
+    .hobbies__logo--walk,
+    .hobbies__logo--series,
+    .hobbies__logo--cook {
+        filter: grayscale(2);
+    }
+
+    .hobbies__logo--music:hover,
+    .hobbies__logo--guitar:hover,
+    .hobbies__logo--walk:hover,
+    .hobbies__logo--series:hover,
+    .hobbies__logo--cook:hover {
+        filter: none;
+        transition: all .3s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hobbies-titulo {
+        font-size: 32px;
+    }
+
+    .list-hobbies {
+        justify-content: center;
+    }
+
+    .list-hobbies_items{
+        width: 11rem;
+    }
+}

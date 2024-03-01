@@ -78,6 +78,10 @@
     background-image: url(../img/react-svgrepo-com.svg);
 }
 
+.skills__logo--python {
+    background-image: url(../img/python-svgrepo-com.svg);
+}
+
 @media screen and (min-width: 768px) {
     .list-skills_items{
         width: 12rem;
@@ -88,7 +92,8 @@
     .skills__logo--mysql,
     .skills__logo--css,
     .skills__logo--bootstrap,
-    .skills__logo--react {
+    .skills__logo--react,
+    .skills__logo--python {
         filter: grayscale(2);
     }
 
@@ -97,7 +102,8 @@
     .skills__logo--mysql:hover,
     .skills__logo--css:hover,
     .skills__logo--bootstrap:hover,
-    .skills__logo--react:hover {
+    .skills__logo--react:hover,
+    .skills__logo--python:hover {
         filter: none;
         transition: all .3s ease-in-out;
     }
